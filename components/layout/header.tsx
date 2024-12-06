@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div>
+    <header className="h-20">
       <span>Kazinaut</span>
       <Link href="/login">
         <Button>Se connecter</Button>
       </Link>
-    </div>
+    </header>
   );
 }
