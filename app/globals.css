@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cabin";
-  src: url("/fonts/Cabin/Cabin.ttf") format("truetype");
+  font-family: "Outfit";
+  src: url("/fonts/Outfit/Outfit.ttf") format("truetype");
 }
 
 @layer base {

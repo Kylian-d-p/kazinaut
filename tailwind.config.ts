@@ -48,7 +48,7 @@ export default {
   			}
   		},
   		fontFamily: {
-  			body: ["Cabin"]
+  			body: ["Outfit"]
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
