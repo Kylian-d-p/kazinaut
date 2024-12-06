@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/components/theme/provider";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -12,8 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
-      <body className="antialiased font-body">{children}</body>
+    <html lang="fr" suppressHydrationWarning>
+      <body className="antialiased font-body">
+        <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
