@@ -1,3 +1,4 @@
+import Header from "@/components/layout/header";
 import { ThemeProvider } from "@/components/theme/provider";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body className="antialiased font-body">
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          <Header />
           {children}
         </ThemeProvider>
       </body>
