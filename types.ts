@@ -9,6 +9,7 @@ export const schemas = {
     email: types.email,
   }),
   editAccount: z.object({
+    email: types.email,
     name: z.string().min(3),
-  })
+  }),
 };
