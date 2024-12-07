@@ -1,7 +1,15 @@
+import { auth } from "@/auth";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { redirect } from "next/navigation";
 import SigninForm from "./form";
 
-export default function Signin() {
+export default async function Signin() {
+  const session = await auth();
+
+  if (session && session.user) {
+    redirect("/games");
+  }
+
   return (
     <main className="flex justify-center">
       <div className="flex flex-col gap-5 w-full max-w-xl">
@@ -10,9 +18,7 @@ export default function Signin() {
             <CardTitle>
               <h1 className="text-3xl">Se connecter</h1>
             </CardTitle>
-            <CardDescription>
-              Connectez-vous à votre compte
-            </CardDescription>
+            <CardDescription>Connectez-vous à votre compte</CardDescription>
           </CardHeader>
           <CardContent>
             <SigninForm />
