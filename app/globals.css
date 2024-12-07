@@ -7,6 +7,11 @@
   src: url("/fonts/Outfit/Outfit.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Vidaloka";
+  src: url("/fonts/Vidaloka/Vidaloka.ttf") format("truetype");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

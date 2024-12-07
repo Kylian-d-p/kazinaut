@@ -54,6 +54,7 @@ export default {
       },
       fontFamily: {
         body: ["Outfit"],
+        head: ["Vidaloka"]
       },
       borderRadius: {
         lg: "var(--radius)",
