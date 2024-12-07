@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const types = {
-  email: z.string().email(),
+  email: z.string({required_error: "Veuillez entrer une adresse email valide", invalid_type_error: "Veuillez entrer une adresse email valide"}).email("Veuillez entrer une adresse email valide"),
 };
 
 export const schemas = {
@@ -10,6 +10,6 @@ export const schemas = {
   }),
   editAccount: z.object({
     email: types.email,
-    name: z.string().min(3),
+    name: z.string({required_error: "Veuillez entrer un nom valide", invalid_type_error: "Veuillez entrer un nom valide"}).min(1, "Le nom doit faire au minimum 1 caractère"),
   }),
 };
