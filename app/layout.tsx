@@ -1,5 +1,6 @@
 import Header from "@/components/layout/header";
 import { ThemeProvider } from "@/components/theme/provider";
+import { Toaster } from "@/components/ui/toaster";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <body className="antialiased font-body">
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
+          <Toaster />
           <Header />
           {children}
         </ThemeProvider>
