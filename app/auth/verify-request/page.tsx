@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function VerifyRequest() {
   return (
-    <main className="flex justify-center">
+    <main className="flex justify-center pt-5">
       <Card>
         <CardHeader>
           <CardTitle>

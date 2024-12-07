@@ -11,7 +11,7 @@ export default async function Signin() {
   }
 
   return (
-    <main className="flex justify-center">
+    <main className="flex justify-center pt-5">
       <div className="flex flex-col gap-5 w-full max-w-xl">
         <Card>
           <CardHeader>
