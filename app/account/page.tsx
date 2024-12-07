@@ -17,9 +17,9 @@ export default async function Account() {
         <Card>
           <CardHeader>
             <CardTitle>
-              <h1 className="text-3xl">Se connecter</h1>
+              <h1 className="text-3xl">Mon compte</h1>
             </CardTitle>
-            <CardDescription>Connectez-vous à votre compte</CardDescription>
+            <CardDescription>Modifiez les informations de votre compte</CardDescription>
           </CardHeader>
           <CardContent>
             <AccountForm defaultValues={{ email: session.user.email, name: session.user.name }} />
