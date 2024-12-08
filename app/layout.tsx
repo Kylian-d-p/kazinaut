@@ -20,9 +20,13 @@ export default function RootLayout({
       <body className="antialiased font-body">
         <ThemeProvider attribute={"class"} defaultTheme="system" enableSystem>
           <Toaster />
-          <Header />
-          {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen justify-between">
+            <div>
+              <Header />
+              {children}
+            </div>
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
